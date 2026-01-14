@@ -6,15 +6,15 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
         <div className="flex justify-center items-center">
-          <BsFillTreeFill />
-          <h1>plant & garden</h1>
+          <BsFillTreeFill className="text-xl md:text-4xl text-green-950" />
+          <h1 className="text-[13px] font-bold">plant & garden</h1>
         </div>
-        <div>
-          <ul className="hidden md:flex gap-7 text-white">
+        <div className="text-xl md:text-3xl font-bold">
+          <ul className="hidden md:flex gap-7 text-green-900">
             <li>
               <a
                 href="#home"
-                className="capitalize cursor-pointer hover:text-gray-400"
+                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 home
               </a>
@@ -22,7 +22,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="capitalize cursor-pointer hover:text-gray-400"
+                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 about
               </a>
@@ -30,7 +30,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#project"
-                className="capitalize cursor-pointer hover:text-gray-400"
+                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 project
               </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#testimonials"
-                className="capitalize cursor-pointer hover:text-gray-400"
+                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 testimonials
               </a>
@@ -46,8 +46,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button className="hidden md:block bg-white px-8 py-4 rounded-full">
-          connect
+        <button className="hidden md:block bg-white px-6 py-2 text-green-900 rounded-full font-bold text-xl md:text-2xl hover:bg-gray-50 hover:text-green-700 cursor-pointer transition duration-200">
+          Connect
         </button>
       </div>
     </div>
