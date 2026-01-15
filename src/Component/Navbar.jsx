@@ -6,6 +6,7 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
         <div className="flex justify-center items-center">
+          <p className="text-[13px] font-bold">josh</p>
           <BsFillTreeFill className="text-xl md:text-4xl text-green-950" />
           <h1 className="text-[13px] font-bold">plant & garden</h1>
         </div>
