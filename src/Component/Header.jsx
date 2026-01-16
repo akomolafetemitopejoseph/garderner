@@ -10,7 +10,7 @@ const Header = () => {
     >
       <Navbar />
       <div className="m-auto text-center  py-4 px-6 md:px-20 lg:px-32">
-        <div className="text-white text-2xl md:text-4xl max-w-3xl sm:text-6xl font-bold leading-13">
+        <div className="text-white text-3xl md:text-4xl max-w-3xl sm:text-6xl font-bold leading-10 lg:leading-13">
           <p className="">We care for yor garden like it's our own.</p>
           <p>
             Turning every space into a blooming garden, <br /> growing beauty
@@ -20,7 +20,7 @@ const Header = () => {
 
         <div className="space-x-6 mt-16">
           <a href="#project">
-            <button className="border border-white px-8 py-3 rounded text-green-700 font-bold text-xl lg:text-2xl bg-gray-100 hover:bg-gray-200 active:bg-green-200 transition-all duration-300 cursor-pointer">
+            <button className="border border-white px-8 py-3 rounded text-green-700 font-bold text-xl lg:text-2xl bg-gray-100 hover:bg-gray-200 active:bg-green-200 transition-all duration-300 cursor-pointer mb-10">
               Projects
             </button>
           </a>
