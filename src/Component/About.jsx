@@ -19,11 +19,11 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
         <img
           src={brandImg}
-          className="w-full sm:w-1/2 max-w-lg"
+          className="w-full h-150 sm:w-1/2 max-w-lg"
           alt="brandimage"
         />
         <div className="flex flex-col items-center md:items-start mt-10 text-gray-600">
-          <div className="grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28">
+          <div className="grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28 capitalize">
             <div>
               <p className="text-4xl font-medium text-gray-800">10+</p>
               <p>years of excellence</p>
@@ -41,14 +41,15 @@ const About = () => {
               <p>ongoing projects</p>
             </div>
           </div>
-          <p className="my-10 max-lg:">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur voluptates, corrupti eligendi harum expedita labore ab
-            fuga obcaecati quis saepe unde adipisci necessitatibus! Ipsam eius
-            consequuntur iusto repellat deleniti at illo asperiores distinctio
-            placeat architecto, quam maiores veritatis, hic sequi?
+          <p className="my-10 max-w-lg">
+            We deliver professional plant care and garden maintenance services,
+            including precision trimming that creates clean edges, structured
+            shapes, and refined garden designs.
+            Reliable plant care and garden maintenance services you can trust.
           </p>
-          <button className="bg-green-800 text-white px-8 py-3 rounded capitalize">learn more</button>
+          <button className="bg-green-800 text-white px-8 py-3 rounded capitalize hover:text-gray-200 cursor-pointer">
+            learn more
+          </button>
         </div>
       </div>
     </div>
