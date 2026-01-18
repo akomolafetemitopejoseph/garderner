@@ -1,6 +1,6 @@
 import React from "react";
-import { TbPlayerTrackPrev } from "react-icons/tb";
-import { TbPlayerTrackNextFilled } from "react-icons/tb";
+import { IoPlayBackOutline } from "react-icons/io5";
+import { TbPlayerTrackNext } from "react-icons/tb";
 
 const Project = () => {
   return (
@@ -9,7 +9,7 @@ const Project = () => {
       id="project"
     >
       <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
-        projects{" "}
+        projects
         <span className="underline-offset-8 decoration-1 underline font-light capitalize">
           completed
         </span>
@@ -17,20 +17,24 @@ const Project = () => {
       <p className="text-center text-gray-500 mb-8 max-w-80 mx-auto">
         Caring for Plants. Maintaining Beautiful Gardens.
         <span className="font-light">
-          Building legacies-explore our portfolio
+          Building legacies-explore our portfolio.
         </span>
       </p>
       {/* sliders button */}
-      <div className="flex justify-end items-center mb-8 gap-5">
-        <TbPlayerTrackPrev
-        //   className="p-3 bg-gray-200 rounded mr-2"
-        //   aria-label="Previous Project"
+      <div className="flex justify-end items-center mb-8 text-4xl">
+        <IoPlayBackOutline
+          className="p-3 rounded mr-2 bg-gray-200 cursor-pointer"
+          aria-label="Previous Project"
         />
 
-        <TbPlayerTrackNextFilled
-        //   className="p-3 bg-gray-200 rounded mr-2"
-        //   aria-label="Next Project"
+        <TbPlayerTrackNext
+          className="p-3 rounded mr-2 bg-gray-200 cursor-pointer"
+          aria-label="Next Project"
         />
+      </div>
+      {/* Project slider container */}
+      <div>
+        
       </div>
     </div>
   );
