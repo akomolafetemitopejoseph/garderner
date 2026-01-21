@@ -1,34 +1,32 @@
-import React from "react"; 
-
+import React from "react";
 
 const Testimonials = () => {
-
   const testimonialData = [
     {
       name: "Mr Wale",
       title: "Manager",
-      ratings: ratings.svg,
+      ratings: 1,
       text: "Excellent service from start to finish. My garden looks neat, healthy, and well-maintained. Very professional, reliable, and detail-oriented. Highly recommended.",
     },
 
     {
       name: "Dr Utche",
       title: "Architect",
-      ratings: 4,
+      ratings: 2,
       text: "They did an amazing job on my garden. The trimming was neat, the plants look healthy, and everything was done on time. I am very happy with the service.",
     },
 
     {
       name: "Mrs Amaka ",
       title: "UI/UX Designer",
-      ratings: 4,
+      ratings: 3,
       text: "Professional garden maintenance with great attention to detail. The team transformed my outdoor space with clean edges, beautiful trimming, and consistent care.",
     },
 
     {
       name: "Mr Dada ",
       title: "Managing Director",
-      ratings: 5,
+      ratings: 4,
       text: "Reliable, professional, and skilled. My garden has never looked better.",
     },
   ];
@@ -49,19 +47,14 @@ const Testimonials = () => {
 
       <div className="flex justify-center gap-8">
         {testimonialData.map((testimonials, index) => (
-          <div
-            key={index}
-            className="w-340 shadow-lg rounded px-8 py-12 text-center"
-          >
-            <h1 className="">{testimonials.name}</h1>
-            <p>{testimonials.title}</p>
-
-            <div>
-              {Array.from({length: testimonials.ratings}, (item, index) => (
-                <img key={index} src={item.ratings} alt="" />
-              ))}
-            </div>
-            
+          <div key={index} className="w-340 shadow-lg rounded px-8 py-12 text-center">
+            <h1 className="text-xl text-gray-700 font-medium">
+              {testimonials.name}
+            </h1>
+            <p className="text-gray-500 mb-4 text-sm">
+              {testimonials.title}
+            </p>
+            <p className="text-gray-600">{testimonials.text}</p>
           </div>
         ))}
       </div>
