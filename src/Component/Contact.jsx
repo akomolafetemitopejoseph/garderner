@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "7f27df02-74a9-4fd0-b1cc-a0d35901123f");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
+  };
+
   return (
     <div
       className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
@@ -16,7 +32,10 @@ const Contact = () => {
         let's grow something together
       </p>
 
-      <form className="max-w-2xl mx-auto text-gray-600 pt-8">
+      <form
+        onSubmit={onSubmit}
+        className="max-w-2xl mx-auto text-gray-600 pt-8"
+      >
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 text-left">
             <label htmlFor="name">Your name</label>
@@ -50,7 +69,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <button className="bg-green-600 text-white py-2 px-12 mb-10 hover:bg-green-500 active:bg-green-600 cursor-pointer rounded-sm">
-          Send Message
+          {result ? result : "send message"}
         </button>
       </form>
     </div>
