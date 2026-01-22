@@ -47,7 +47,7 @@ const Testimonials = () => {
 
       <div className="flex justify-center gap-8">
         {testimonialData.map((testimonials, index) => (
-          <div key={index} className="w-340 shadow-lg rounded px-8 py-12 text-center">
+          <div key={index} className="w-200 shadow-lg rounded px-8 py-12 text-center">
             <h1 className="text-xl text-gray-700 font-medium">
               {testimonials.name}
             </h1>
