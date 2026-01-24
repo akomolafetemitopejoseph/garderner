@@ -15,6 +15,7 @@ const Contact = () => {
 
     const data = await response.json();
     setResult(data.success ? "Success!" : "Error");
+    alert("Form Submitted successfully")
   };
 
   return (

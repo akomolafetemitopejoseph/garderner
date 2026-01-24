@@ -18,7 +18,7 @@ const Navbar = () => {
           <BsFillTreeFill className="text-xl md:text-4xl text-green-950" />
           <h1 className="text-[14px] font-bold">plant & garden</h1>
         </div>
-        <div className="text-xl md:text-3xl font-bold">
+        <div className="text-xl md:text-2xl font-bold">
           <ul className="hidden md:flex gap-7 text-green-900">
             <li>
               <a
@@ -50,6 +50,14 @@ const Navbar = () => {
                 className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 testimonials
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
+              >
+                contact
               </a>
             </li>
           </ul>
