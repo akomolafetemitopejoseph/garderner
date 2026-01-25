@@ -27,12 +27,29 @@ const Footer = () => {
           </p>
         </div>
 
-        <div>
-            <h3 className="text-white text-lg font-bold mb-4">company</h3>
+        <div className="w-full md:w-1/5 mb-8 md:mb-0">
+          <h3 className="text-white text-lg font-extrabold mb-4">Company</h3>
+          <ul className="flex flex-col gap-2 text-gray-800">
+            <a href="#home" className="hover:text-white">
+              Home
+            </a>
+            <a href="#about" className="hover:text-white">
+              About us
+            </a>
+            <a href="#project" className="hover:text-white">
+              project
+            </a>
+            <a href="#contact" className="hover:text-white">
+              Contact
+            </a>
+          </ul>
         </div>
-        <div></div>
+        <div>
+          <h1>
+            Copyright 2026 &copy;. <BsFillTreeFill /> All Right Reserved
+          </h1>
+        </div>
       </div>
-      <div></div>
     </div>
   );
 };
