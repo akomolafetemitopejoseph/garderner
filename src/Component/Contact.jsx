@@ -5,6 +5,7 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
+    setResult("Sending...");
     const formData = new FormData(event.target);
     formData.append("access_key", "7f27df02-74a9-4fd0-b1cc-a0d35901123f");
 
@@ -13,9 +14,12 @@ const Contact = () => {
       body: formData,
     });
 
+    setResult("");
+
     const data = await response.json();
+
     setResult(data.success ? "Success!" : "Error");
-    alert("Form Submitted successfully")
+    alert("Form Submitted successfully");
   };
 
   return (
@@ -70,7 +74,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <button className="bg-green-600 text-white py-2 px-12 mb-10 hover:bg-green-500 active:bg-green-600 cursor-pointer rounded-sm">
-          {result ? result : "send message"}
+          {result ? result : "Send Message"}
         </button>
       </form>
     </div>
