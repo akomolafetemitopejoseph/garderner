@@ -1,5 +1,6 @@
 import React from "react";
-import { BsFillTreeFill } from "react-icons/bs";
+
+import logo from "../assets/joshLogo_modifyCopy.jpeg";
 
 const Footer = () => {
   return (
@@ -7,46 +8,40 @@ const Footer = () => {
       className="pt-10 px-4 md:px-20 lg:px-32 bg-green-600 w-full overflow-hidden"
       id="footer"
     >
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start mb-5">
         <div>
           <div className="flex w-full md:w-1/3 mb-8 md:mb-0">
-            <div></div>
-            <p
-              className="text-[12px]
-           font-bold"
-            >
-              josh
-            </p>
-            <BsFillTreeFill className="text-[20px] text-green-950" />
-            <h1 className="text-[12px] font-bold">plant & garden</h1>
+            <img className="w-20 h-20" src={logo} alt="logo" />
           </div>
 
-          <p className="text-gray-800 mt-4">
+          <p className="text-gray-200 mt-4">
             Reliable plant care and <br /> garden maintenance services you can
             trust.
           </p>
         </div>
 
         <div className="w-full md:w-1/5 mb-8 md:mb-0">
-          <h3 className="text-white text-lg font-extrabold mb-4">Company</h3>
-          <ul className="flex flex-col gap-2 text-gray-800">
-            <a href="#home" className="hover:text-white">
+          <h3 className="text-black text-2xl font-extrabold mb-4 text-center">
+            Company
+          </h3>
+          <ul className="flex text-center flex-col gap-2 text-gray-200">
+            <a href="#home" className="hover:text-gray-700">
               Home
             </a>
-            <a href="#about" className="hover:text-white">
+            <a href="#about" className="hover:text-gray-700">
               About us
             </a>
-            <a href="#project" className="hover:text-white">
+            <a href="#project" className="hover:text-gray-700">
               project
             </a>
-            <a href="#contact" className="hover:text-white">
+            <a href="#contact" className="hover:text-gray-700">
               Contact
             </a>
           </ul>
         </div>
         <div>
-          <h1>
-            Copyright 2026 &copy;. <BsFillTreeFill /> All Right Reserved
+          <h1 className="text-[18px] lg:text-sm">
+            Copyright 2026 &copy;. All Right Reserved
           </h1>
         </div>
       </div>
