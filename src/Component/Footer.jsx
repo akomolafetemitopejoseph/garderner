@@ -14,9 +14,9 @@ const Footer = () => {
             <img className="w-20 h-20" src={logo} alt="logo" />
           </div>
 
-          <p className="text-gray-200 mt-4">
-            Reliable plant care and <br /> garden maintenance services you can
-            trust.
+          <p className="text-gray-200 mt-4 mb-5">
+            Reliable flower landscaping plant care <br /> garden maintenance
+            services you can trust.
           </p>
         </div>
 

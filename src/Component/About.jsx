@@ -42,10 +42,11 @@ const About = () => {
             </div>
           </div>
           <p className="my-10 max-w-lg">
-            We deliver professional plant care and garden maintenance services,
-            including precision trimming that creates clean edges, structured
-            shapes, and refined garden designs.
-            Reliable plant care and garden maintenance services you can trust.
+            We deliver professional flower landscaping and plant care garden
+            maintenance services, including precision trimming that creates
+            clean edges, structured shapes, and refined garden designs. Reliable
+            flower landscaping and plant care garden maintenance services you
+            can trust.
           </p>
           <button className="bg-green-800 text-white px-8 py-3 rounded capitalize hover:text-gray-200 cursor-pointer">
             learn more

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsFillTreeFill } from "react-icons/bs";
+import logoNav from "../assets/joshLogo_modifyCopy.jpeg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 
@@ -14,9 +14,7 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
         <div className="flex justify-center items-center">
-          <p className="text-[14px] font-bold">josh</p>
-          <BsFillTreeFill className="text-xl md:text-4xl text-green-950" />
-          <h1 className="text-[14px] font-bold">plant & garden</h1>
+          <img className="w-10 h-10" src={logoNav} alt="for logo" />
         </div>
         <div className="text-xl md:text-2xl font-bold">
           <ul className="hidden md:flex gap-7 text-green-900">

@@ -7,6 +7,10 @@ import project3 from "../assets/project3.jpeg";
 import project4 from "../assets/project4.jpeg";
 import project5 from "../assets/project5.jpeg";
 import project6 from "../assets/project6.jpeg";
+import project7 from "../assets/project7.jpeg";
+import project8 from "../assets/project8.jpeg";
+import project9 from "../assets/project9.jpeg";
+import project10 from "../assets/project10.jpeg";
 
 const Project = () => {
   const projectData = [
@@ -45,6 +49,26 @@ const Project = () => {
       location: "1004 VI Lagos",
       image: project6,
     },
+    {
+      title: "Flowers",
+      location: "Shoreline Ikoyi",
+      image: project7,
+    },
+    {
+      title: "Palms",
+      location: "Ikoyi",
+      image: project8,
+    },
+    {
+      title: "Working On Tree",
+      location: "Ikoyi",
+      image: project9,
+    },
+    {
+      title: "Flowers",
+      location: "Ikoyi",
+      image: project10,
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +80,7 @@ const Project = () => {
   };
   const prevProject = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? projectData.length - 1 : prevIndex - 1
+      prevIndex === 0 ? projectData.length - 1 : prevIndex - 1,
     );
   };
 
@@ -109,13 +133,13 @@ const Project = () => {
         <div
           className="flex gap-8 transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(-${(currentIndex * 100) / cardsShow}%)`,
+            transform: `translateX(-${(currentIndex * 150) / cardsShow}%)`,
           }}
         >
           {projectData.map((projects, index) => (
             <div key={index} className="relative flex shrink-0 w-full sm:w-1/4">
               <img
-                className="w-100 h-auto mb-14"
+                className="w-100 lg:w-50 h-auto mb-14"
                 src={projects.image}
                 alt={projects.title}
               />
