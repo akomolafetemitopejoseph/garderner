@@ -34,28 +34,13 @@ const Navbar = () => {
                 about
               </a>
             </li>
-            <li>
-              <a
-                href="#project"
-                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
-              >
-                project
-              </a>
-            </li>
+
             <li>
               <a
                 href="#testimonials"
                 className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 testimonials
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
-              >
-                contact
               </a>
             </li>
           </ul>

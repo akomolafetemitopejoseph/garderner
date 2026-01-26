@@ -131,7 +131,7 @@ const Project = () => {
       {/* Project slider container */}
       <div className="overflow-hidden">
         <div
-          className="flex gap-8 transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${(currentIndex * 150) / cardsShow}%)`,
           }}

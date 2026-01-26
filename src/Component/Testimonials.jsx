@@ -45,15 +45,16 @@ const Testimonials = () => {
         Real stories from those who enjoyed our services.
       </p>
 
-      <div className="flex justify-center gap-8">
+      <div className="grid grid-cols-1 lg:flex justify-center gap-8">
         {testimonialData.map((testimonials, index) => (
-          <div key={index} className="w-200 shadow-lg rounded px-8 py-12 text-center">
+          <div
+            key={index}
+            className="w-100 lg:w-200 shadow-lg rounded px-8 py-12 text-center"
+          >
             <h1 className="text-xl text-gray-700 font-medium">
               {testimonials.name}
             </h1>
-            <p className="text-gray-500 mb-4 text-sm">
-              {testimonials.title}
-            </p>
+            <p className="text-gray-500 mb-4 text-sm">{testimonials.title}</p>
             <p className="text-gray-600">{testimonials.text}</p>
           </div>
         ))}
