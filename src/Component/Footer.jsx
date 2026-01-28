@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start mb-5">
         <div>
           <div className="flex w-full md:w-1/3 mb-8 md:mb-0">
-            <img className="w-20 h-20" src={logo} alt="logo" />
+            <img className="w-20 h-20 border-green-700 rounded-full " src={logo} alt="logo" />
           </div>
 
           <p className="text-gray-200 mt-4 mb-5">

@@ -14,7 +14,11 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
         <div className="flex justify-center items-center">
-          <img className="w-10 h-10" src={logoNav} alt="for logo" />
+          <img
+            className="w-12 h-12 border-amber-700 rounded-full"
+            src={logoNav}
+            alt="for logo"
+          />
         </div>
         <div className="text-xl md:text-2xl font-bold">
           <ul className="hidden md:flex gap-7 text-green-900">
@@ -51,7 +55,7 @@ const Navbar = () => {
         </button>
         {/* Menue icons  */}
 
-        <div className="flex lg:hidden justify-end mx-3 my-3">
+        <div className="flex lg:hidden justify-end mx-3 my-3 text-white">
           {menue ? (
             <AiOutlineMenu onClick={toggleMenue} className="text-3xl" />
           ) : (
@@ -73,6 +77,7 @@ const Navbar = () => {
                 home
               </a>
             </li>
+
             <li>
               <a
                 onClick={() => setMenue(false)}

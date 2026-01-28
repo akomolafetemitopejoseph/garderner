@@ -49,7 +49,7 @@ const Testimonials = () => {
         {testimonialData.map((testimonials, index) => (
           <div
             key={index}
-            className="w-100 lg:w-200 shadow-lg rounded px-8 py-12 text-center"
+            className="w-fit lg:w-200 shadow-lg rounded px-8 py-12 text-center"
           >
             <h1 className="text-xl text-gray-700 font-medium">
               {testimonials.name}
