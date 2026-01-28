@@ -13,7 +13,8 @@ const Navbar = () => {
   return (
     <div className="absolute top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center gap-5 items-center">
+          <h1 className="text-white capitalize text-sm font-extralight">garden & plants</h1>
           <img
             className="w-12 h-12 border-amber-700 rounded-full"
             src={logoNav}
@@ -24,7 +25,7 @@ const Navbar = () => {
           <ul className="hidden md:flex gap-7 text-green-900">
             <li>
               <a
-                href="#home"
+                href="#header"
                 className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 home
@@ -81,7 +82,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => setMenue(false)}
-                href="#about"
+                href="#header"
                 className="capitalize cursor-pointer hover:text-green-800 transition duration-200"
               >
                 about
