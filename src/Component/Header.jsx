@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+import { tr } from "framer-motion/m";
 
 const Header = () => {
   return (
@@ -9,7 +11,13 @@ const Header = () => {
       id="#header"
     >
       <Navbar />
-      <div className="m-auto text-center  py-4 px-6 md:px-20 lg:px-32">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 2 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="m-auto text-center  py-4 px-6 md:px-20 lg:px-32"
+      >
         <div className="text-white text-3xl md:text-4xl max-w-3xl sm:text-6xl font-bold leading-10 lg:leading-13">
           <p className="">We care for yor garden like it's our own.</p>
           <p>
@@ -30,7 +38,7 @@ const Header = () => {
             </button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -11,6 +11,7 @@ import project7 from "../assets/project7.jpeg";
 import project8 from "../assets/project8.jpeg";
 import project9 from "../assets/project9.jpeg";
 import project10 from "../assets/project10.jpeg";
+import { motion } from "framer-motion";
 
 const Project = () => {
   const projectData = [
@@ -98,7 +99,11 @@ const Project = () => {
     return () => window.removeEventListener("resize", updateCardsShow);
   }, []);
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x:-200}}
+      transition={{ duration: 2 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden"
       id="project"
     >
@@ -155,7 +160,7 @@ const Project = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
