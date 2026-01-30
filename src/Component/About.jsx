@@ -53,9 +53,11 @@ const About = () => {
             flower landscaping and plant care garden maintenance services you
             can trust.
           </p>
-          <button className="bg-green-800 text-white px-8 py-3 rounded capitalize hover:text-gray-200 cursor-pointer">
-            learn more
-          </button>
+          {/* <a href="projectbtn">
+            <button className="bg-green-800 text-white px-8 py-3 rounded capitalize hover:text-gray-200 cursor-pointer">
+              learn more
+            </button>
+          </a> */}
         </div>
       </div>
     </motion.div>
