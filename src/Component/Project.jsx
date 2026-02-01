@@ -134,17 +134,17 @@ const Project = () => {
         />
       </div>
       {/* Project slider container */}
-      <div className="overflow-hidden">
+      <div className="">
         <div
           className="flex gap-8 transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translateX(-${(currentIndex * 200) / cardsShow}%)`,
+            transform: `translateX(-${(currentIndex * 110) / cardsShow}%)`,
           }}
         >
           {projectData.map((projects, index) => (
             <div key={index} className="relative flex shrink-0 w-full sm:w-1/4">
               <img
-                className="w-100 h-auto mb-14"
+                className="w-fit h-auto mb-14"
                 src={projects.image}
                 alt={projects.title}
               />

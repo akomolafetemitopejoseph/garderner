@@ -26,7 +26,7 @@ const Footer = () => {
             Company
           </h3>
           <ul className="flex text-center flex-col gap-2 text-gray-200">
-            <a href="#header" className="hover:text-gray-700">
+            <a href="header" className="hover:text-gray-700">
               Home
             </a>
             <a href="#about" className="hover:text-gray-700">
