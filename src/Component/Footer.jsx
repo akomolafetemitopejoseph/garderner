@@ -34,17 +34,17 @@ const Footer = () => {
           </h3>
           <ul className="flex text-center flex-col gap-2 text-gray-200">
             <Link to="/header" smooth={true} duration={500}>
-              <li className="hover:text-gray-700">Home</li>
+              <li className="hover:text-gray-700 cursor-pointer">Home</li>
             </Link>
 
             <Link to="about" smooth={true} duration={500}>
-              <li className="hover:text-gray-700">About us</li>
+              <li className="hover:text-gray-700 cursor-pointer">About us</li>
             </Link>
             <Link to="project" smooth={true} duration={500}>
-              <li className="hover:text-gray-700">Project</li>
+              <li className="hover:text-gray-700 cursor-pointer">Project</li>
             </Link>
             <Link to="contact" smooth={true} duration={500}>
-              <li className="hover:text-gray-700">Contact</li>
+              <li className="hover:text-gray-700 cursor-pointer">Contact</li>
             </Link>
           </ul>
         </div>
