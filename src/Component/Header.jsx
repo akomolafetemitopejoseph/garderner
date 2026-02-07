@@ -9,7 +9,7 @@ const Header = () => {
     <div
       className="min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
       style={{ backgroundImage: `url(${bgImage})` }}
-      id="header"
+      id="/header"
     >
       <Navbar />
       <motion.div
