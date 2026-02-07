@@ -50,26 +50,26 @@ const Project = () => {
       location: "1004 VI Lagos",
       image: project6,
     },
-    {
-      title: "Flowers",
-      location: "Shoreline Ikoyi",
-      image: project7,
-    },
-    {
-      title: "Palms",
-      location: "Ikoyi",
-      image: project8,
-    },
-    {
-      title: "Working On Tree",
-      location: "Ikoyi",
-      image: project9,
-    },
-    {
-      title: "Flowers",
-      location: "Ikoyi",
-      image: project10,
-    },
+    // {
+    //   title: "Flowers",
+    //   location: "Shoreline Ikoyi",
+    //   image: project7,
+    // },
+    // {
+    //   title: "Palms",
+    //   location: "Ikoyi",
+    //   image: project8,
+    // },
+    // {
+    //   title: "Working On Tree",
+    //   location: "Ikoyi",
+    //   image: project9,
+    // },
+    // {
+    //   title: "Flowers",
+    //   location: "Ikoyi",
+    //   image: project10,
+    // },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

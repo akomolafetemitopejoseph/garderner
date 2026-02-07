@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
-import { tr } from "framer-motion/m";
+import bgImage from "../assets/bgImage.jpg"
+
 
 const Header = () => {
   return (
     <div
       className="min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
-      style={{ backgroundImage: "url('/bgImage.jpg')" }}
+      style={{ backgroundImage: `url(${bgImage})` }}
       id="header"
     >
       <Navbar />
