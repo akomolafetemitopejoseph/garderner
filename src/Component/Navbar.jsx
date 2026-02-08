@@ -49,10 +49,16 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <a
+          href="https://wa.me/2349164127577"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="hidden md:block bg-white px-6 py-2 text-green-900 rounded-full font-bold text-xl md:text-2xl hover:bg-gray-50 hover:text-green-700 cursor-pointer transition duration-200">
+            Connect
+          </button>
+        </a>
 
-        <button className="hidden md:block bg-white px-6 py-2 text-green-900 rounded-full font-bold text-xl md:text-2xl hover:bg-gray-50 hover:text-green-700 cursor-pointer transition duration-200">
-          Connect
-        </button>
         {/* Menue icons  */}
 
         <div className="flex lg:hidden justify-end mx-3 my-3 text-white">
