@@ -50,7 +50,7 @@ const Contact = () => {
         </span>
       </h1>
       <p className="text-center text-gray-500 mb-12 max-w-80 mx-auto">
-        let's grow something together
+        We’re ready to help you keep your garden healthy and beautiful. Contact us today for professional garden maintenance, trimming, and landscaping services
       </p>
 
       <form
@@ -89,7 +89,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <button className="bg-green-600 text-white py-2 px-12 mb-10 hover:bg-green-500 active:bg-green-600 cursor-pointer rounded-sm">
+        <button className="bg-green-800 text-white py-2 px-12 mb-10 hover:bg-green-700 active:bg-green-600 cursor-pointer rounded-sm">
           {result ? result : "Send Message"}
         </button>
       </form>
