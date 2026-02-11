@@ -7,10 +7,10 @@ import project3 from "../assets/project3.jpeg";
 import project4 from "../assets/project4.jpeg";
 import project5 from "../assets/project5.jpeg";
 import project6 from "../assets/project6.jpeg";
-import project7 from "../assets/project7.jpeg";
-import project8 from "../assets/project8.jpeg";
-import project9 from "../assets/project9.jpeg";
-import project10 from "../assets/project10.jpeg";
+// import project7 from "../assets/project7.jpeg";
+// import project8 from "../assets/project8.jpeg";
+// import project9 from "../assets/project9.jpeg";
+// import project10 from "../assets/project10.jpeg";
 import { motion } from "framer-motion";
 
 const Project = () => {
@@ -46,8 +46,8 @@ const Project = () => {
     },
 
     {
-      title: "Pot And Flowers",
-      location: "1004 VI Lagos",
+      title: "Palms",
+      location: "Ikoyi",
       image: project6,
     },
     // {
