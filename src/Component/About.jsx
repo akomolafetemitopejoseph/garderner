@@ -53,6 +53,11 @@ const About = () => {
             flower landscaping and plant care garden maintenance services you
             can trust.
           </p>
+          <p className="my-10 max-w-lg">
+            We’re ready to help you keep your garden healthy and beautiful.
+            Contact us today for professional garden maintenance, trimming, and
+            landscaping services.
+          </p>
           {/* <a href="projectbtn">
             <button className="bg-green-800 text-white px-8 py-3 rounded capitalize hover:text-gray-200 cursor-pointer">
               learn more
