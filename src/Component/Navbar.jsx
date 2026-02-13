@@ -118,7 +118,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex justify-center mt-3"
           >
-            <button className="bg-green-400 px-6 py-2 text-white rounded-full font-bold text-xl">
+            <button className="bg-green-900 px-6 py-2 text-white rounded-full font-bold text-xl">
               Connect
             </button>
           </a>
