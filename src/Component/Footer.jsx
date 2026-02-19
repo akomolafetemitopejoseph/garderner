@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container text-center mx-auto flex flex-col md:flex-row justify-between items-start mb-5">
         <div>
           <div className="flex justify-center items-center gap-5 capitalize mb-8 md:mb-0">
-            <h1 className="text-black font-extralight text-lg">
+            <h1 className="text-black font-extrabold text-lg">
               Josh plant & garden
             </h1>
             <img
@@ -34,17 +34,25 @@ const Footer = () => {
           </h3>
           <ul className="flex text-center flex-col gap-2 text-gray-200">
             <Link to="/header" smooth={true} duration={500}>
-              <li className="hover:text-gray-900 cursor-pointer">Home</li>
+              <li className="hover:text-gray-900 transform duration-500 cursor-pointer">
+                Home
+              </li>
             </Link>
 
             <Link to="about" smooth={true} duration={500}>
-              <li className="hover:text-gray-900 cursor-pointer">About us</li>
+              <li className="hover:text-gray-900 transform duration-500 cursor-pointer">
+                About us
+              </li>
             </Link>
             <Link to="project" smooth={true} duration={500}>
-              <li className="hover:text-gray-900 cursor-pointer">Project</li>
+              <li className="hover:text-gray-900 transform duration-500 cursor-pointer">
+                Project
+              </li>
             </Link>
             <Link to="contact" smooth={true} duration={500}>
-              <li className="hover:text-gray-900 cursor-pointer">Contact</li>
+              <li className="hover:text-gray-900 transform duration-500 cursor-pointer">
+                Contact
+              </li>
             </Link>
           </ul>
         </div>
